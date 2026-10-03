@@ -32,3 +32,4 @@ dnf5 install -y libvirt qemu-kvm
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable libvirtd.service

@@ -13,7 +13,10 @@ cp -avf "/ctx/system_files"/. /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux
+dnf5 install -y libvirt qemu-kvm steam
+
+# This installs my favorite flatpak apps from flathub
+flatpak install -y org.mozilla.firefox org.mozilla.Thunderbird org.davmail.DavMail com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
 
 # Use a COPR Example:
 #

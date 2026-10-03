@@ -17,10 +17,10 @@ cp -avf "/ctx/system_files"/. /
 # dnf5 install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # this installs a package from fedora repos
-dnf5 install -y libvirt qemu-kvm flatpak
+dnf5 install -y libvirt qemu-kvm
 
 # This installs my favorite flatpak apps from flathub
-flatpak install -y org.mozilla.firefox org.mozilla.Thunderbird org.davmail.DavMail com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
+#flatpak install -y org.mozilla.firefox org.mozilla.Thunderbird org.davmail.DavMail com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
 
 # Use a COPR Example:
 #

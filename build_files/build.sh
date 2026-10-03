@@ -12,8 +12,12 @@ cp -avf "/ctx/system_files"/. /
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
+#Enable RPMfusion free and nonfree repos
+dnf5 install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+dnf5 install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
 # this installs a package from fedora repos
-dnf5 install -y libvirt qemu-kvm
+dnf5 install -y libvirt qemu-kvm steam flatpak
 
 # This installs my favorite flatpak apps from flathub
 flatpak install -y org.mozilla.firefox org.mozilla.Thunderbird org.davmail.DavMail com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
